@@ -1,0 +1,21 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* ocupa o espaço disponível */
+}
+
+.footer {
+  background-color: #b8b3b3;
+  color: #051564;
+  text-align: center;
+  padding: 15px;
+}

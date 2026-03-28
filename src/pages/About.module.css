@@ -1,0 +1,14 @@
+
+.about {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+@media (min-width: 1024px){
+  .about {
+  margin-left: 30%;
+  text-align:left;
+  width: 500px;
+  
+  }
+}

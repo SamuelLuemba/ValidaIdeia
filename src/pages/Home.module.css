@@ -1,0 +1,87 @@
+.home {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #1161f8;
+  margin-bottom: 20px;
+}
+.logoimg{
+  height: 50px;
+}
+
+
+.imagePlaceholder {
+ width: 90%;
+  max-width: 1200px;   /* limite de largura */
+  margin: 0 auto;      /* centraliza horizontalmente */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;       /* cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra leve */
+}
+.imagePlaceholder img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.imagePlaceholder img:hover{
+ transform: scale(1.05);
+}
+ 
+.intro {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #333;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.startBtn {
+  background-color: #1161f8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.startBtn:hover {
+  background-color: #042869;
+   transform: scale(1.05);
+}
+
+
+/* Ajuste para telas grandes (PC) */
+@media (min-width: 1024px) {
+  .imagePlaceholder {
+    max-width: 700px; /* reduz a largura máxima */
+  }
+
+  .imagePlaceholder img {
+    width: 70%; /* não ocupa toda a largura */
+  }
+}
+/* Responsivo */
+@media (max-width: 768px) {
+  .logoimg{
+  height: 30px;
+}
+}
