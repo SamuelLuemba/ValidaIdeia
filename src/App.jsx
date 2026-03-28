@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, HashRouter} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Questions from './components/Questions'
@@ -13,12 +13,14 @@ function App() {
     <div id="root">
      <Navbar />
      <main>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/result" element={<Result />} />
       </Routes>
+      </HashRouter>
       </main>
       <Footer className="footer" />
     </div>
