@@ -42,14 +42,35 @@
 /* Sidebar escondida */
 .sidebar {
   position: fixed;
-  top: 50px;
+  top: 70px;
   right: -100%; /* escondido fora da tela */
-  width: 100%;
+  width: 50%;
   height: 100%;
-  background: #b8b3b3;
+  background-color:rgba(255, 255, 255,0.15);
+  backdrop-filter: blur(15px);
   transition: right 0.3s ease;
   padding-top: 60px;
   text-align: center;
+}
+
+.sideBtn {
+  background-color: #b8b3b3;
+  color: #111;
+  border: none;
+  padding: 5px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sideBtn:hover {
+  background-color: #042869;
+   transform: scale(1.05);
+}
+
+.ressalv{
+   background: #b8b3b3;
 }
 
 .sidebar ul {

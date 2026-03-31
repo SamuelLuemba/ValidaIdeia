@@ -26,8 +26,12 @@ function Navbar() {
       {/* Sidebar mobile */}
       <div className={`${style.sidebar} ${open ? style.show : ""}`}>
         <ul>
-          <li><Link to="/" onClick={() => setOpen(false)}><FaHome /> Home</Link></li>
-          <li><Link to="/about" onClick={() => setOpen(false)}><FaInfoCircle/> Sobre</Link></li>
+          <li><Link to="/" onClick={() => setOpen(false)}>
+            <button className={style.sideBtn}><FaHome /> Home</button>
+          </Link></li>
+          <li><Link to="/about" onClick={() => setOpen(false)}>
+           <button className={style.sideBtn}><FaInfoCircle/> Sobre</button>
+           </Link></li>
         </ul>
       </div>
     </nav>
